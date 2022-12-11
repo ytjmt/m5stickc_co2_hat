@@ -353,8 +353,8 @@ draw_lcd()
 
 
 # MH-19B/C UART,GPIO設定
-#mhz19b = machine.UART(1, tx=0, rx=26)   # for Rev0.1
-mhz19b = machine.UART(1, tx=0, rx=36)  # for Rev0.2
+mhz19b = machine.UART(1, tx=0, rx=26)   # for Rev0.1
+# mhz19b = machine.UART(1, tx=0, rx=36)  # for Rev0.2
 mhz19b.init(9600, bits=8, parity=None, stop=1)
 
 # 電源ONでMH-Z19のキャリブレーション処理が起こらない様に、HD端子(G26)を出力＆Highにしておく for Rev0.2
